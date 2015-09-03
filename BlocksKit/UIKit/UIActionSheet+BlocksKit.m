@@ -112,7 +112,7 @@
 
 #pragma mark Initializers
 
-+ (id)bk_actionSheetWithTitle:(NSString *)title {
++ (id)bk_actionSheetWithTitle:(NSString *)title NS_EXTENSION_UNAVAILABLE_IOS("Not available in app extensions.") {
 	return [[[self class] alloc] bk_initWithTitle:title];
 }
 
