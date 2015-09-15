@@ -116,7 +116,7 @@
 	return [[[self class] alloc] bk_initWithTitle:title];
 }
 
-- (id)bk_initWithTitle:(NSString *)title NS_EXTENSION_UNAVAILABLE_IOS("Not available in app extensions.") {
+- (id)bk_initWithTitle:(NSString *)title {
 	self = [self initWithTitle:title delegate:self.bk_dynamicDelegate cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil];
 	if (!self) { return nil; }
 	self.delegate = self.bk_dynamicDelegate;
